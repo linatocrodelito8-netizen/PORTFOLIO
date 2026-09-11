@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+  <header>
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">HOME</a></li>
+        <li><a href="education.html" class="nav-link">EDUCATION</a></li>
+        <li><a href="skills.html" class="nav-link">SKILLS</a></li>
+        <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+        <li><a href="contact.html" class="nav-link">CONTACTS</a></li>
+      </ul>
+      <div class="brand">MY PORTFOLIO</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="portrait-frame">
+      <div class="portrait">
+        <img src="images/PROOOF.png" alt="Rodelito Linatoc">
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <h1>HI I'M RODELITO LINATOC</h1>
+      <p class="role">ASPIRING GAME PROGRAMMER</p>
+      <p class="description">
+        DEDICATED IT STUDENT AND ASPIRING GAME PROGRAMMER WITH A STRONG FOUNDATION IN SOFTWARE DEVELOPMENT AND INTERACTIVE DESIGN. PASSIONATE ABOUT UTILIZING C++ AND C# TO DESIGN, DEVELOP, AND OPTIMIZE DESKTOP APPLICATIONS AND ENGAGING GAMEPLAY MECHANICS. POSSESSES STRONG PROBLEM-SOLVING SKILLS AND A COMMITMENT TO CLEAN CODE, EAGER TO CONTRIBUTE HANDS-ON PROJECT EXPERIENCE TO THE GAMING AND SOFTWARE INDUSTRY.
+      </p>
+      <div class="btn-row">
+  <a href="projects.html" class="btn btn-solid">VIEW WORKS</a>
+  <a href="contact.html" class="btn btn-outline">GET IN TOUCH</a>
+</div>
+<a href="RESUME.pdf" class="btn btn-ghost" download="Rodelito_Linatoc_Resume.pdf">DOWNLOAD RESUME</a>
+    </div>
+  </section>
+
+  
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>

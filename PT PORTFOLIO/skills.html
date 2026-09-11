@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="education.html" class="nav-link">Education</a></li>
+      <li><a href="skills.html" class="nav-link active">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="brand">My Portfolio</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="section-head reveal">
+    <p class="eyebrow">What I bring</p>
+    <h2>My <em>Skills</em></h2>
+    <div class="rule"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <h3>Java <img src="images/java.png" alt="Java Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="20"></div></div>
+      <span>Object-oriented systems &amp; Android basics</span>
+    </div>
+    <div class="skill-card reveal">
+      <h3>C++ <img src="images/c++.png" alt="C++ Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="35"></div></div>
+      <span>Game logic &amp; performance-critical code</span>
+    </div>
+    <div class="skill-card reveal">
+      <h3>Unity &amp; C# <img src="images/unity.png" alt="Unity Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="25"></div></div>
+      <span>2D/3D prototypes and gameplay systems</span>
+    </div>
+    <div class="skill-card reveal">
+      <h3>Web Technologies <img src="images/web.png" alt="Web Technologies Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="40"></div></div>
+      <span>HTML, CSS, JavaScript fundamentals</span>
+    </div>
+    <div class="skill-card reveal">
+      <h3>Git &amp; Version Control <img src="images/Git.png" alt="Git Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="35"></div></div>
+      <span>Collaborative workflows &amp; branching</span>
+    </div>
+    <div class="skill-card reveal">
+      <h3>Problem Solving <img src="images/logic.png" alt="Problem Solving Icon" class="skill-icon"></h3>
+      <div class="bar-track"><div class="bar-fill" data-level="50"></div></div>
+      <span>Algorithmic thinking &amp; debugging</span>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

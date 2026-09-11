@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-page">
+
+<header>
+  <div class="nav-wrap">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="education.html" class="nav-link">Education</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="brand">My Portfolio</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="projects-main">
+
+  <section id="education" class="education-section">
+    <div class="education-container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Academic Journey</p>
+        <h2>Projects</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="projects-layout">
+
+        <div class="projects-list">
+
+          <a href="https://linatocrodelito8-netizen.github.io/Frozen-Meatshop/" target="_blank" class="project-slot active" data-target="proj-meatshop">
+            <div class="slot-content">
+              <div class="slot-icon">&lt;/&gt;</div>
+              <div>
+                <h3 class="slot-title">M.B LINATOC</h3>
+                <span class="slot-category">E-COMMERCE WEBSITE</span>
+              </div>
+              <span class="slot-arrow">&rarr;</span>
+            </div>
+          </a>
+
+          <div class="project-slot" data-target="proj-game">
+            <div class="slot-content">
+              <div class="slot-icon">&lt;/&gt;</div>
+              <div>
+                <h3 class="slot-title">JAVA COMPILER</h3>
+                <span class="slot-category">LIVE CODE RUNNER</span>
+              </div>
+              <span class="slot-arrow">&rarr;</span>
+            </div>
+          </div>
+
+          <div class="project-slot" data-target="proj-system">
+            <div class="slot-content">
+              <div class="slot-icon">&lt;/&gt;</div>
+              <div>
+                <h3 class="slot-title">C++ COMPILER</h3>
+                <span class="slot-category">LIVE CODE RUNNER</span>
+              </div>
+              <span class="slot-arrow">&rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="project-projection">
+
+          <div class="projection-bar">
+            <div class="bar-dots">
+              <span class="dot dot-orange"></span>
+              <span class="dot dot-muted"></span>
+              <span class="dot dot-gold"></span>
+              <span class="bar-title">LIVE PREVIEW</span>
+            </div>
+            <a id="liveSiteBtn" href="https://linatocrodelito8-netizen.github.io/Frozen-Meatshop/" target="_blank" class="open-site-btn">↗ OPEN SITE</a>
+          </div>
+
+          <div class="projection-viewport" id="viewportWrapper">
+
+            <div class="proj-pane active" id="proj-meatshop">
+              <div class="iframe-container" id="iframeBox">
+                <iframe id="scaledIframe" src="https://linatocrodelito8-netizen.github.io/Frozen-Meatshop/" title="M.B Linatoc Meatshop Live Preview"></iframe>
+              </div>
+            </div>
+
+            <!-- Pane 2: Java Compiler -->
+            <div class="proj-pane" id="proj-game">
+              <div class="pane-header">
+                <h3>JAVA COMPILER</h3>
+                <div class="badge">☕ Runner</div>
+              </div>
+
+              <div class="pane-card">
+                <div class="card-heading">LIBRARY SYSTEM</div>
+                <div class="pane-footer">
+                <span class="tag">NOTICE</span>
+                <p>
+                <p>Please be advised that the compiler is currently experiencing functional limitations. While it allows users to enter input, it is presently unable to execute the required calculations.
+
+The compiler is intended solely for demonstration purposes, specifically to illustrate the structure and functionality of the JavaScript code used in this project.
+
+For Testing Purposes:
+If you would like to test the code and see how it functions, please copy the provided JavaScript code, click “Open Site,” and paste the code into the designated area on the website.
+
+We apologize for any inconvenience this limitation may cause and sincerely appreciate your understanding and consideration.</p>
+
+                <div class="compiler-toolbar">
+                  <button id="editCodeBtn" class="action-btn secondary-btn">✎ Edit Code</button>
+                </div>
+
+                <pre class="code-viewer" id="codeViewer"></pre>
+                <textarea class="code-editor" id="codeEditor" style="display:none;" spellcheck="false"></textarea>
+
+                <button id="runJavaBtn" class="action-btn">▶ Start Program</button>
+
+                <div class="terminal" id="terminal">
+                  <div class="term-line term-placeholder">Click "Start Program" to begin answering the prompts…</div>
+                </div>
+              </div>
+
+Click Start, then answer each question directly in the console above.
+</p>
+              </div>
+            </div>
+
+            <!-- Pane 3: C++ Compiler -->
+            <div class="proj-pane" id="proj-system">
+              <div class="pane-header">
+                <h3>C++ COMPILER</h3>
+                <div class="badge">⚙ Runner</div>
+              </div>
+
+              <div class="pane-card">
+                <div class="card-heading">MATRIX COMPARISON</div>
+                <div class="pane-footer">
+                <span class="tag">NOTICE</span>
+                <p>
+                <p>Please be advised that the compiler is currently experiencing functional limitations. While it allows users to enter input, it is presently unable to execute the required calculations.
+
+The compiler is intended solely for demonstration purposes, specifically to illustrate the structure and functionality of the C++ code used in this project.
+
+For Testing Purposes:
+If you would like to test the code and see how it functions, please copy the provided C++ code, click “Open Site,” and paste the code into the designated area on the website.
+
+We apologize for any inconvenience this limitation may cause and sincerely appreciate your understanding and consideration.</p>
+
+                <div class="compiler-toolbar">
+                  <button id="editCodeBtnCpp" class="action-btn secondary-btn">✎ Edit Code</button>
+                </div>
+
+                <pre class="code-viewer" id="codeViewerCpp"></pre>
+                <textarea class="code-editor" id="codeEditorCpp" style="display:none;" spellcheck="false"></textarea>
+
+                <button id="runCppBtn" class="action-btn">▶ Start Program</button>
+
+                <div class="terminal" id="terminalCpp">
+                  <div class="term-line term-placeholder">Click "Start Program" to begin answering the prompts…</div>
+                </div>
+              </div>
+
+Click Start, then answer each question directly in the console above.
+</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+ function resizeIframe() {
+  const box = document.getElementById('iframeBox');
+  const iframe = document.getElementById('scaledIframe');
+  if (!box || !iframe) return;
+
+  const baseWidth = 1920;
+  const baseHeight = 1080;
+
+  const containerWidth = box.clientWidth;
+  const containerHeight = box.clientHeight;
+
+  const scaleX = containerWidth / baseWidth;
+  const scaleY = containerHeight / baseHeight;
+  const scale = Math.max(scaleX, scaleY);
+
+  iframe.style.width = baseWidth + 'px';
+  iframe.style.height = baseHeight + 'px';
+  iframe.style.transform = `scale(${scale})`;
+}
+
+  window.addEventListener('resize', resizeIframe);
+  window.addEventListener('DOMContentLoaded', resizeIframe);
+
+  const projectLinks = {
+    'proj-meatshop': 'https://linatocrodelito8-netizen.github.io/Frozen-Meatshop/',
+    'proj-game': 'https://www.onlinegdb.com/online_java_compiler',
+    'proj-system': 'https://www.onlinegdb.com/online_c++_compiler'
+  };
+
+  const liveSiteBtn = document.getElementById('liveSiteBtn');
+  const slots = document.querySelectorAll('.project-slot');
+  const panes = document.querySelectorAll('.proj-pane');
+
+  slots.forEach(slot => {
+    slot.addEventListener('mouseenter', () => {
+      slots.forEach(s => {
+        s.classList.remove('active');
+      });
+      panes.forEach(p => {
+        p.classList.remove('active');
+        p.style.display = 'none';
+      });
+
+      slot.classList.add('active');
+
+      const targetId = slot.getAttribute('data-target');
+      const targetPane = document.getElementById(targetId);
+      if (targetPane) {
+        targetPane.style.display = 'flex';
+        targetPane.classList.add('active');
+        if (targetId === 'proj-meatshop') {
+          setTimeout(resizeIframe, 10);
+        }
+      }
+
+      if (liveSiteBtn && projectLinks[targetId]) {
+        liveSiteBtn.href = projectLinks[targetId];
+      }
+    });
+  });
+
+  // ==================== SHARED TERMINAL HELPER ====================
+  function addLineG(terminalEl, text, cls) {
+    const div = document.createElement('div');
+    div.className = 'term-line' + (cls ? ' ' + cls : '');
+    div.textContent = text;
+    terminalEl.appendChild(div);
+    terminalEl.scrollTop = terminalEl.scrollHeight;
+    return div;
+  }
+
+  function askSingle(terminalEl, promptText) {
+    return new Promise((resolve) => {
+      const row = document.createElement('div');
+      row.className = 'term-line term-prompt-row';
+
+      const label = document.createElement('span');
+      label.textContent = promptText;
+      row.appendChild(label);
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'term-input';
+      row.appendChild(input);
+
+      terminalEl.appendChild(row);
+      terminalEl.scrollTop = terminalEl.scrollHeight;
+      input.focus();
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const value = input.value;
+          input.disabled = true;
+          row.innerHTML = '';
+          row.className = 'term-line';
+          row.textContent = promptText + value;
+          resolve(value);
+        }
+      });
+    });
+  }
+
+  // ==================== JAVA COMPILER ====================
+
+  const DEFAULT_JAVA_CODE = `import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        System.out.print("Member name: ");
+        String Name = scn.nextLine();
+
+        System.out.print("Library ID: ");
+        int ID = scn.nextInt();
+
+        System.out.print("Book Title: ");
+        scn.nextLine();
+        String Title = scn.nextLine();
+
+        System.out.print("Number of Books Borrowed: ");
+        int numberofbooks = scn.nextInt();
+
+        System.out.print("Number of days: ");
+        int numberofdays = scn.nextInt();
+
+        System.out.print("Daily Fee per book: ");
+        double DailyFee = scn.nextInt();
+
+        System.out.print("Membership Fee: ");
+        double MembershipFee = scn.nextInt();
+
+        System.out.print("Processing Fee per book: ");
+        double Processfeeperbook = scn.nextInt();
+
+        int totalDays = numberofbooks * numberofdays;
+        System.out.print("Total Days: " + totalDays + " Days\\n");
+
+        double borrowingFee = numberofbooks * DailyFee;
+        System.out.print("Total Borrowing Fee: " + borrowingFee + "\\n");
+
+        double TotalprocessingFee = numberofbooks * Processfeeperbook;
+        System.out.print("Total Processing Fee: " + TotalprocessingFee + "\\n");
+
+        double TotalAmount = borrowingFee + TotalprocessingFee + MembershipFee;
+        System.out.print("Total Amount: " + TotalAmount + "\\n");
+    }
+}`;
+
+  const PROMPTS = [
+    "Member name: ",
+    "Library ID: ",
+    "Book Title: ",
+    "Number of Books Borrowed: ",
+    "Number of days: ",
+    "Daily Fee per book: ",
+    "Membership Fee: ",
+    "Processing Fee per book: "
+  ];
+
+  let currentCode = DEFAULT_JAVA_CODE;
+  let isEditing = false;
+  let isRunning = false;
+
+  const codeViewer = document.getElementById('codeViewer');
+  const codeEditor = document.getElementById('codeEditor');
+  const editCodeBtn = document.getElementById('editCodeBtn');
+  const runBtn = document.getElementById('runJavaBtn');
+  const terminal = document.getElementById('terminal');
+
+  function renderViewer() {
+    codeViewer.textContent = currentCode;
+  }
+  renderViewer();
+
+  if (editCodeBtn) {
+    editCodeBtn.addEventListener('click', () => {
+      if (isRunning) return;
+      if (!isEditing) {
+        codeEditor.value = currentCode;
+        codeViewer.style.display = 'none';
+        codeEditor.style.display = 'block';
+        editCodeBtn.textContent = '🔒 Lock Code';
+        isEditing = true;
+      } else {
+        currentCode = codeEditor.value;
+        renderViewer();
+        codeEditor.style.display = 'none';
+        codeViewer.style.display = 'block';
+        editCodeBtn.textContent = '✎ Edit Code';
+        isEditing = false;
+      }
+    });
+  }
+
+  function addLine(text, cls) {
+    return addLineG(terminal, text, cls);
+  }
+
+  function askNext(index, answers) {
+    if (index >= PROMPTS.length) {
+      runProgram(answers);
+      return;
+    }
+
+    const row = document.createElement('div');
+    row.className = 'term-line term-prompt-row';
+
+    const label = document.createElement('span');
+    label.textContent = PROMPTS[index];
+    row.appendChild(label);
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'term-input';
+    row.appendChild(input);
+
+    terminal.appendChild(row);
+    terminal.scrollTop = terminal.scrollHeight;
+    input.focus();
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const value = input.value;
+        input.disabled = true;
+        row.innerHTML = '';
+        row.className = 'term-line';
+        row.textContent = PROMPTS[index] + value;
+        answers.push(value);
+        askNext(index + 1, answers);
+      }
+    });
+  }
+
+  async function runProgram(answers) {
+    addLine('Running program…');
+    const codeToRun = isEditing ? codeEditor.value : currentCode;
+    const stdinValue = answers.join('\n') + '\n';
+
+    try {
+      const res = await fetch('https://emkc.org/api/v2/piston/execute', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          language: 'java',
+          version: '*',
+          files: [{ name: 'Main.java', content: codeToRun }],
+          stdin: stdinValue
+        })
+      });
+
+      const data = await res.json();
+      const compileErr = data.compile && data.compile.stderr;
+      const runOut = data.run ? data.run.stdout : '';
+      const runErr = data.run ? data.run.stderr : '';
+
+      if (compileErr) {
+        addLine(compileErr, 'term-error');
+      } else if (runErr) {
+        addLine(runErr, 'term-error');
+      } else {
+        addLine(runOut || '(program ran with no output)');
+      }
+    } catch (err) {
+      addLine('Could not reach the code execution service. Please try again.', 'term-error');
+    } finally {
+      isRunning = false;
+      runBtn.disabled = false;
+      editCodeBtn.disabled = false;
+    }
+  }
+
+  if (runBtn) {
+    runBtn.addEventListener('click', () => {
+      if (isRunning) return;
+      isRunning = true;
+      runBtn.disabled = true;
+      editCodeBtn.disabled = true;
+      terminal.innerHTML = '';
+      askNext(0, []);
+    });
+  }
+
+  // ==================== C++ COMPILER ====================
+
+  const DEFAULT_CPP_CODE = `#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main () {
+    
+   int z[100][100];
+   int arr2[100][100]; 
+  
+   
+   int x = 0;
+   int c = 0;
+   int diffCount = 0;
+   
+   int rows = 0;
+   int cols = 0;
+   
+   cout <<"Enter the number of rows: ";
+   cin>>rows;
+   cout <<"Enter the number of columns: ";
+   cin>>cols;
+   
+   cout<<"Enter the elements of the first array: "<<endl;
+   
+   for (x = 0; x < rows; x++){
+       
+       for (c = 0; c < cols; c++){
+       cout <<"Element at [" << x <<"]["<< c <<"]: ";
+       cin>> z[x][c];
+       }
+   }
+   
+   cout<<"Enter the elements of the second array: "<<endl;
+   
+   for (x = 0; x < rows; x++){
+       
+       for (c = 0; c < cols; c++){
+       cout <<"Element at [" << x <<"]["<< c <<"]: ";
+       cin>> arr2[x][c];
+       }
+   }
+       
+    for (x = 0; x < rows; x++){
+       for (c = 0; c < cols; c++){
+      if (z[x][c] != arr2[x][c]){
+          diffCount++;
+      }
+      
+       }
+   }
+       cout<<"Number of differences between the two matrices: "<<diffCount<<endl;
+    
+    return 0;
+}`;
+
+  let currentCppCode = DEFAULT_CPP_CODE;
+  let isEditingCpp = false;
+  let isRunningCpp = false;
+
+  const codeViewerCpp = document.getElementById('codeViewerCpp');
+  const codeEditorCpp = document.getElementById('codeEditorCpp');
+  const editCodeBtnCpp = document.getElementById('editCodeBtnCpp');
+  const runCppBtn = document.getElementById('runCppBtn');
+  const terminalCpp = document.getElementById('terminalCpp');
+
+  function renderViewerCpp() {
+    codeViewerCpp.textContent = currentCppCode;
+  }
+  renderViewerCpp();
+
+  if (editCodeBtnCpp) {
+    editCodeBtnCpp.addEventListener('click', () => {
+      if (isRunningCpp) return;
+      if (!isEditingCpp) {
+        codeEditorCpp.value = currentCppCode;
+        codeViewerCpp.style.display = 'none';
+        codeEditorCpp.style.display = 'block';
+        editCodeBtnCpp.textContent = '🔒 Lock Code';
+        isEditingCpp = true;
+      } else {
+        currentCppCode = codeEditorCpp.value;
+        renderViewerCpp();
+        codeEditorCpp.style.display = 'none';
+        codeViewerCpp.style.display = 'block';
+        editCodeBtnCpp.textContent = '✎ Edit Code';
+        isEditingCpp = false;
+      }
+    });
+  }
+
+  async function runProgramCpp(answers) {
+    addLineG(terminalCpp, 'Running program…');
+    const codeToRun = isEditingCpp ? codeEditorCpp.value : currentCppCode;
+    const stdinValue = answers.join('\n') + '\n';
+
+    try {
+      const res = await fetch('https://emkc.org/api/v2/piston/execute', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          language: 'cpp',
+          version: '*',
+          files: [{ name: 'main.cpp', content: codeToRun }],
+          stdin: stdinValue
+        })
+      });
+
+      const data = await res.json();
+      const compileErr = data.compile && data.compile.stderr;
+      const runOut = data.run ? data.run.stdout : '';
+      const runErr = data.run ? data.run.stderr : '';
+
+      if (compileErr) {
+        addLineG(terminalCpp, compileErr, 'term-error');
+      } else if (runErr) {
+        addLineG(terminalCpp, runErr, 'term-error');
+      } else {
+        addLineG(terminalCpp, runOut || '(program ran with no output)');
+      }
+    } catch (err) {
+      addLineG(terminalCpp, 'Could not reach the code execution service. Please try again.', 'term-error');
+    } finally {
+      isRunningCpp = false;
+      runCppBtn.disabled = false;
+      editCodeBtnCpp.disabled = false;
+    }
+  }
+
+  async function runCppFlow() {
+    const answers = [];
+    let v;
+
+    v = await askSingle(terminalCpp, "Enter the number of rows: ");
+    answers.push(v);
+    const rows = parseInt(v) || 0;
+
+    v = await askSingle(terminalCpp, "Enter the number of columns: ");
+    answers.push(v);
+    const cols = parseInt(v) || 0;
+
+    addLineG(terminalCpp, "Enter the elements of the first array:");
+    for (let x = 0; x < rows; x++) {
+      for (let c = 0; c < cols; c++) {
+        v = await askSingle(terminalCpp, `Element at [${x}][${c}]: `);
+        answers.push(v);
+      }
+    }
+
+    addLineG(terminalCpp, "Enter the elements of the second array:");
+    for (let x = 0; x < rows; x++) {
+      for (let c = 0; c < cols; c++) {
+        v = await askSingle(terminalCpp, `Element at [${x}][${c}]: `);
+        answers.push(v);
+      }
+    }
+
+    await runProgramCpp(answers);
+  }
+
+  if (runCppBtn) {
+    runCppBtn.addEventListener('click', () => {
+      if (isRunningCpp) return;
+      isRunningCpp = true;
+      runCppBtn.disabled = true;
+      editCodeBtnCpp.disabled = true;
+      terminalCpp.innerHTML = '';
+      runCppFlow();
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | LINATOC, RODELITO V. Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="education.html" class="nav-link">Education</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="brand">My Portfolio</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="contact">
+  <div class="section-head reveal">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Contact</h2>
+    <div class="rule"></div>
+    <p class="contact-intro">For collaborations, opportunities, or inquiries, please feel free to reach out. I would be delighted to hear from you.</p>
+  </div>
+
+  <form class="contact-box reveal" id="contactForm">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" type="text" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
+    </div>
+    <div class="field">
+      <label for="subject">Subject</label>
+      <input id="subject" type="text" required>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-solid">Send Message</button>
+    <p class="form-status" id="formStatus"></p>
+  </form>
+
+  <div class="social-row reveal">
+  <a href="https://www.facebook.com/linatoc.jr.rodelito" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">FB</a>
+  <a href="https://www.instagram.com/direct/t/17842320944801246/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">IG</a>
+  <a href="mailto:2520710@ub.edu.com" class="social-icon" aria-label="Gmail" target="_blank" rel="noopener noreferrer">✉</a>
+</div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
